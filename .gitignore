@@ -1,2 +1,8 @@
 .DS_Store
 .claude/
+
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fls
+cv/*.fdb_latexmk

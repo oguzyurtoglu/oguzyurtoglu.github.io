@@ -1,0 +1,137 @@
+% Oğuz Yurtoğlu — academic CV
+% Compile with pdflatex (or latexmk -pdf cv.tex)
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\pagestyle{empty}
+\setlength{\parskip}{3pt}
+\raggedright
+\hypersetup{colorlinks=true, urlcolor=black!70, linkcolor=black}
+
+% ---- simple section heading with a rule ----
+\newcommand{\cvsection}[1]{%
+  \par\vskip 0pt plus 5\baselineskip\penalty-200\vskip 0pt plus -5\baselineskip
+  \vspace{6pt}%
+  \noindent{\large\scshape #1}\par\nobreak
+  \vspace{-9pt}\noindent\rule{\textwidth}{0.4pt}\par\nobreak
+  \vspace{1pt}}
+
+% ---- entry: left text, right-aligned dates ----
+\newcommand{\entry}[2]{\noindent #1\hfill{\small #2}\par}
+
+% ---- compact list ----
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=1pt, parsep=0pt, label=--}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{center}
+  {\LARGE\bfseries Oğuz Yurtoğlu}\\[4pt]
+  Department of Economics, Koç University, Istanbul\\[2pt]
+  \href{mailto:oyurtoglu22@ku.edu.tr}{oyurtoglu22@ku.edu.tr} \,·\,
+  \href{https://oguzyurtoglu.github.io}{oguzyurtoglu.github.io} \,·\,
+  \href{https://www.linkedin.com/in/oguz-yurtoglu/}{linkedin.com/in/oguz-yurtoglu}\\
+  {\small Last updated: October 2026}
+\end{center}
+
+% ================= EDUCATION =================
+\cvsection{Education}
+
+\entry{\textbf{PhD in Economics}, Koç University}{2022 -- 2027 (expected)}
+Dissertation: \emph{Essays on Housing Market Networks and Spillovers}. Advisor: Kamil Yılmaz.
+
+\entry{\textbf{MSc in Economics} (with Merit), Trinity College Dublin}{2021 -- 2022}
+
+\entry{\textbf{BSc in Management Engineering}, Istanbul Technical University}{2016 -- 2020}
+
+% ================= FIELDS =================
+\cvsection{Research Fields}
+
+Time Series Econometrics, Networks, Housing, Regional Economics
+
+% ================= JOB MARKET PAPER =================
+\cvsection{Job Market Paper}
+
+\textbf{What Connects Local Housing Markets? Regulation, Migration and the National Cycle}\par
+{\small Accepted for presentation at the 2026 SMU--Jinan Conference on Urban and Regional Economics, joint with the 11th WB--GWU Urbanization and Development Conference, December 2026.}
+
+% ================= WORK IN PROGRESS =================
+\cvsection{Work in Progress}
+
+\textbf{Adverse Labor Shocks and House Prices: Evidence from Norway's Offshore Workers}\par
+{\small Draft, October 2026.}
+
+\textbf{How Should a Penalized VAR Be Tuned to Measure Connectedness?}\par
+{\small Preliminary draft, October 2026.}
+
+% ================= RESEARCH EXPERIENCE =================
+\cvsection{Research Experience}
+
+\entry{\textbf{Research Assistant}, BETAM, Bahçeşehir University}{Oct 2024 -- Jan 2026}
+Bahçeşehir University Center for Economic and Social Research. Co-authored the quarterly growth assessments and a research note on deep poverty; member of the research team for a survey-based report on the Istanbul labor market prepared for the Istanbul Metropolitan Municipality.
+
+\entry{\textbf{Graduate Research Fellow}, TÜBİTAK 2247-A Project (PI: Kamil Yılmaz)}{2022 -- 2025}
+``Inflation Connectedness and the Gravity Model'' (Enflasyon Bağlanmışlığı ve Yer Çekimi Modeli).
+
+% ================= POLICY PUBLICATIONS =================
+\cvsection{Policy Research}
+
+\begin{itemize}
+  \item Gürsel, S. and O. Yurtoğlu (2025). ``Türkiye'de Derin Yoksulluk'' (Deep Poverty in Turkey). \emph{BETAM Research Note} 25/280, April 2025.
+  \item \emph{İstanbul İşgücü Piyasası ve Kadın İstihdamı} (The Istanbul Labor Market and Women's Employment). BETAM report for the Istanbul Metropolitan Municipality, led by S. Gürsel, L. Pinedo Caro and N. Kenar; member of the research team, February 2025.
+  \item \emph{Büyüme Değerlendirmesi} (Quarterly Growth Assessment), with O. Bakış and S. Gürsel. BETAM quarterly series, five issues, 2024\,Q3 -- 2025\,Q3.
+\end{itemize}
+
+% ================= PRESENTATIONS =================
+\cvsection{Conference Presentations}
+
+\entry{SMU--Jinan Conference on Urban and Regional Economics (with WB--GWU)}{Dec 2026}
+{\small ``What Connects Local Housing Markets? Regulation, Migration and the National Cycle'' (JMP, scheduled).}
+
+\entry{Spring Meeting of the Turkish Economic Association (SMTEA 2026), İstanbul}{May 2026}
+{\small ``House Price Spillovers and Migration Networks'' (earlier version of the JMP).}
+
+% ================= TEACHING =================
+\cvsection{Teaching}
+
+\entry{\textbf{Instructor}, Koç University}{}
+\begin{itemize}
+  \item ECON 202 Macroeconomics \hfill Summer 2025
+\end{itemize}
+
+\entry{\textbf{Teaching Assistant}, Koç University}{}
+\begin{itemize}
+  \item ECON 322 International Finance \hfill six semesters, Fall 2022 -- Fall 2026
+  \item ECON 330 Industrial Organization \hfill Fall 2023, Spring 2024
+  \item ECON 440/540 Banking and Regulation \hfill Fall 2024
+  \item ECON 202 Macroeconomics \hfill Spring 2025
+  \item ECON 100 Principles of Economics \hfill Fall 2023
+\end{itemize}
+
+% ================= OTHER EXPERIENCE =================
+\cvsection{Other Professional Experience}
+
+\entry{Assistant Business Analyst, Yapı Kredi Teknoloji, Istanbul}{2020 -- 2021}
+\entry{Intern, Akbank (Payment Systems), Istanbul}{2019}
+\entry{Intern, Unilever (Supply Chain), Istanbul}{2018}
+
+% ================= SKILLS =================
+\cvsection{Skills}
+
+\entry{\textbf{Software:} R, Stata, MATLAB, SQL, \LaTeX}{}
+\entry{\textbf{Languages:} Turkish (native), English (fluent)}{}
+
+% ================= REFERENCES =================
+\cvsection{References}
+
+Available upon request.
+
+\end{document}
