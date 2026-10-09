@@ -1,0 +1,33 @@
+:root{--text:#1f2328;--muted:#59636e;--accent:#1f4e79;--line:#e6e8eb;--bg:#ffffff;--maxw:840px}
+*{box-sizing:border-box}
+html{font-size:17px}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{border-bottom:1px solid var(--line)}
+.nav{max-width:var(--maxw);margin:0 auto;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav .brand{font-weight:bold;font-size:1.1rem;color:var(--text)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px}
+.nav li a{color:var(--muted);font-family:Helvetica,Arial,sans-serif;font-size:.92rem;letter-spacing:.02em}
+.nav li a.active,.nav li a:hover{color:var(--accent);text-decoration:none}
+main{max-width:var(--maxw);margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;margin:0 0 6px;font-weight:normal}
+h2{font-size:1.3rem;margin:36px 0 12px;font-weight:normal;border-bottom:1px solid var(--line);padding-bottom:6px}
+h3{font-size:1.05rem;margin:22px 0 4px;font-weight:bold}
+.subtitle{color:var(--muted);margin:0 0 24px;font-family:Helvetica,Arial,sans-serif;font-size:.95rem}
+.hero{display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap}
+.hero img{width:180px;height:270px;object-fit:cover;border-radius:4px;flex-shrink:0;background:#eee}
+.hero .intro{flex:1;min-width:260px}
+.meta{color:var(--muted);font-size:.95rem;margin:4px 0}
+.paper{margin-bottom:28px}
+.paper .title{font-weight:bold}
+.paper .status{color:var(--muted);font-size:.92rem;font-family:Helvetica,Arial,sans-serif}
+.paper .links a{margin-right:14px;font-family:Helvetica,Arial,sans-serif;font-size:.9rem}
+details summary{cursor:pointer;color:var(--accent);font-family:Helvetica,Arial,sans-serif;font-size:.9rem}
+details p{margin-top:8px}
+dl{margin-top:28px;display:grid;grid-template-columns:110px 1fr;gap:8px 16px}
+dt{color:var(--muted);font-family:Helvetica,Arial,sans-serif;font-size:.9rem;padding-top:3px}
+dd{margin:0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-family:Helvetica,Arial,sans-serif;font-size:.82rem}
+footer div{max-width:var(--maxw);margin:0 auto;padding:18px 20px}
+@media (max-width:600px){dl{grid-template-columns:1fr}dt{padding-top:10px}}
